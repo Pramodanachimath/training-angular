@@ -1,0 +1,16 @@
+<div>
+    <ol *ngIf="courses">
+        <li *ngFor="let course of courses">
+            <h4 [ngClass]="'one myclass'">{{course.courseName|uppercase}}</h4>
+            <h4 [ngClass]="['two','myclass']">{{course.cost|currency:'Rs '}}</h4>
+            <h4 [ngClass]="{
+                one :course.type.includes('end'),
+                two :course.courseName.includes('p'),
+                myclass :course.category=='Web'
+            }">{{course.category|titlecase}}</h4>
+            <h4>{{course.type|lowercase}}</h4>
+            <h4>{{course.medium|lowercase}}</h4>
+            <h4 *ngIf="course.trainer">{{course.trainer|title:'m'}}</h4>
+        </li>
+    </ol>
+</div>
