@@ -1,0 +1,49 @@
+[{
+    "courseName":"Java",
+    "cost":2000,
+    "category":"programming",
+    "type":"backend",
+    "medium":"offline",
+    "trainer":"Ravi"
+},
+{
+    "courseName":"Angular",
+    "cost":9000,
+    "category":"programming",
+    "type":"backend",
+    "medium":"online",
+    "trainer":"pam"
+},
+{
+    "courseName":"Spring",
+    "cost":8000,
+    "category":"programming",
+    "type":"backend",
+    "medium":"offline",
+    "trainer":"pam"
+},
+{
+    "courseName":"Cucumber",
+    "cost":5000,
+    "category":"Testing",
+    "type":"automation",
+    "medium":"online",
+    "trainer":"Ram"
+},
+{
+    "courseName":"Selenium",
+    "cost":5000,
+    "category":"Testing",
+    "type":"automation",
+    "medium":"offline",
+    "trainer":"Root"
+},
+{
+    "courseName":"AWS",
+    "cost":50000,
+    "category":"CloudComputing",
+    "type":"devops",
+    "medium":"offline",
+    "trainer":"Sita"
+}
+]

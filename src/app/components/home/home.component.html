@@ -1,1 +1,33 @@
-<p>home works!</p>
+<div appHighlight="appHighlight">
+    <h1>Online Courses</h1>
+</div>
+<div chighlight="chighlight">
+    <h2>training Simplified</h2>
+</div>
+<div hostHighlight>
+<h2>Using HostListner</h2>
+</div>
+Enter color<input type="color" #backgroundcolor (keyup)="0"> <br><br><br>
+
+<!-- <h2 *ngIf="username=='Pramod' else temp1" >Welcome {{username}}</h2> -->
+
+<div >
+<h2 bindHighlight [defaultColor]="'orange'"
+[highlightColor]="'blue'"
+[textTransform]="'uppercase'"
+[newbgcolor]="backgroundcolor.value"
+[bgcolor]="'yellow'">Using Bind Highlight</h2>
+</div>
+
+
+<h2 *appNotif="username=='Pramod' else temp2" >
+You are allowed {{username}}
+</h2>
+User Name<input type="text" [(ngModel)]="username">
+<h2 *ngIf="username=='Pramod' else temp2">Welcome {{username}}</h2>
+<ng-template #temp2 >
+    <h2 *ngIf="username">Wrong username</h2>
+</ng-template>
+
+<!-- If condition is false this will be printed -->
+<h2 *appNotif="username=='Pramod'">Hello {{username}}</h2>
